@@ -1,0 +1,9 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    font-family: "Pacifico", cursive;
+}
+
+html, body, div#root {
+    height: 100%;
+    margin: 0;
+}

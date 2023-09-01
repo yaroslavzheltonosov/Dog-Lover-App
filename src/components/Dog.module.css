@@ -1,0 +1,98 @@
+.DogsContainer {
+  position: relative;
+  width: 100%;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.DogElement {
+  padding: 15px;
+  width: 100%;
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+
+.DogCart {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.150);
+  width: 100%;
+  border-radius: 0.25rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.DogImageContainer {
+  position: relative;
+  padding-bottom: 100%;
+}
+
+.DogImage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.DogName {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  padding: 10px;
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+.DogDetails, .FavoriteDog {
+  padding: 15px;
+}
+
+.SortContainer {
+  text-align: center;
+  margin: 20px;
+}
+
+.FavoriteDog {
+  border: none;
+  outline: none;
+  color: #ffffff;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  background: linear-gradient(135deg, #f34079 40%, #fc894d);
+}
+
+.FavoriteDog:hover {
+  background: linear-gradient(135deg, #fc894d 40%, #f34079);
+}
+
+.FavoriteDog[disabled] {
+  background: none;
+  color: black;
+  font-weight: bold;
+}
+
+.FavoriteDog[disabled]:hover {
+  background: none;
+  cursor: auto;
+}
+
+@media (min-width: 768px) {
+  .DogElement {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+}
+
+@media (min-width: 992px) {
+  .DogElement {
+    flex: 0 0 33%;
+    max-width: 33%;
+  }
+}

@@ -1,0 +1,71 @@
+.Dialog {
+    position: absolute;
+    padding: 1rem 3rem;
+	background: white;
+	padding-top: 2rem;
+	border-radius: 20px;
+	border: 0;
+	box-shadow: 0 5px 30px 0 rgb(0 0 0 / 10%);
+	animation: fadeIn 1s ease both;
+}
+
+.Dialog * {
+	max-width: none;
+}
+
+.Backdrop {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    background: rgba(0, 0, 0, 0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Title {
+    font-weight: 600;
+    font-size: 2rem;
+    padding-bottom: 1rem;
+    color: black;
+}
+
+.Content {
+    font-size: 1rem;
+    line-height: 1.3rem;
+    padding: 0.5rem 0;
+}
+
+.CloseDialogButton {
+    filter: grayscale(1);
+	border: none;
+	background: none;
+	position: absolute;
+	top: 15px;
+	right: 10px;
+	transition: ease filter, transform 0.3s;
+	cursor: pointer;
+	transform-origin: center;
+	&:hover {
+		filter: grayscale(0);
+		transform: scale(1.1);
+	}
+}
+
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+@media (max-width: 420px) {
+	.Dialog {
+		transform: scale(0.75);
+	}
+}

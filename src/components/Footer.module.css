@@ -1,0 +1,29 @@
+.Footer {
+    padding: 30px;
+    width: 100%;
+}
+
+.Copyright {
+    text-align: center;
+    font-size: large;
+}
+
+.ButtonSection {
+    text-align: center;
+}
+
+.NextPageButton, .PreviousPageButton, .BackToTopButton {
+    margin: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 470px) {
+    .ButtonSection {
+        display: flex;
+        flex-direction: column;
+    }
+    .NextPageButton, .PreviousPageButton, .BackToTopButton {
+        padding: 10px;
+    }
+}

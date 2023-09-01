@@ -1,0 +1,64 @@
+.CommonStyles {
+    border: none;
+    background: hsl(0 0% 93%);
+    border-radius: .25rem;
+    padding: .75rem 1rem;
+    margin: 5px;
+    min-width: 200px;
+    max-width: 500px;
+    width: 100%;
+}
+
+.SearchInputField {
+    composes: CommonStyles;
+}
+
+.SubmitSearchValues {
+    composes: CommonStyles;
+    cursor: pointer;
+    background: hotpink;
+    color: white;
+    box-shadow: 0 .75rem .5rem -.5rem hsl(0 50% 80%);
+    transition: background-color 0.3s ease-in;
+}
+
+.SubmitSearchValues:hover {
+    background-color: #e75480;
+}
+
+.FormContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.LoginMessageContainer {
+    text-align: center;
+}
+
+.GreetingMessage {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.LoadingMessage {
+    padding: 20px;
+    max-height: 20px;
+    text-align: center;
+}
+
+@media (max-width: 760px) {
+    .Form {
+        flex-direction: column;
+    }
+    .SearchInputField, .SubmitSearchValues {
+        max-width: 250px;
+    }
+}

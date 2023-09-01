@@ -1,0 +1,61 @@
+.LoginMessageContainer, .NoFavoriteDogsMessage {
+    text-align: center;
+}
+
+.ButtonsContainer {
+    text-align: center;
+    margin: 25px;
+}
+
+.ClearAllButton {
+    background-color: #EA4C89;
+    box-shadow: 0 .75rem .5rem -.5rem hsl(0 60% 80%);
+    border-radius: 8px;
+    border-style: none;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-size: 14px;
+    line-height: 20px;
+    padding: 10px 20px;
+    width: 200px;
+    transition: background-color 0.25s ease-in;
+}
+
+.ClearAllButton:hover {
+    background-color: #be527c;
+}
+
+.MatchButton {
+    padding: 10px 20px;
+    margin: 20px;
+    background-color: #46b9b9;
+    box-shadow: 0 .75rem .5rem -.5rem hsl(199, 60%, 65%);
+    border-radius: 8px;
+    border-style: none;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-size: 14px;
+    line-height: 20px;
+    width: 300px;
+    transition: background-color 0.25s ease-in;
+}
+
+.MatchButton:hover {
+    background-color: #5281be;
+}
+
+.FavoriteDogsContainer {
+    position: relative;
+    width: 100%;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 470px) {
+    .ClearAllButton, .MatchButton {
+        width: fit-content;
+    }
+}

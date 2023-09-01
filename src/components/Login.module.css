@@ -1,0 +1,68 @@
+.FormContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+  
+.Form {
+    width: 100%;
+    max-width: 400px;
+    padding: 40px;
+    border-radius: 10px;
+}
+  
+.Login {
+    font-size: 30px;
+    color: #403866;
+    line-height: 1.2;
+    text-align: center;
+    width: 100%;
+    display: block;
+}
+  
+.EmailFieldContainer, .NameFieldContainer {
+    margin-bottom: 16px;
+}
+  
+.EmailField, .NameField {
+    width: 100%;
+    padding: 15px;
+    background-color: #e7e7e7;
+    border: 1px solid #e7e7e7;
+    border-radius: 5px;
+}
+
+.EmailField::placeholder, .NameField::placeholder {
+    color: #909099;
+}
+  
+.SubmitFormButtonContainer {
+    text-align: center;
+    margin-top: 20px;
+}
+  
+.SubmitFormButton {
+    background-color: #7674ec;
+    height: 50px;
+    margin-top: 10px;
+    width: 100%;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in;
+}
+  
+.SubmitFormButton:hover {
+    background-color: #6664cc;
+}
+
+.ErrorMessage {
+    margin: 10px 0;
+    color: #ba3939;
+    text-align: center;
+}
+  
